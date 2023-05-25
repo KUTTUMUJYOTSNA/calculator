@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" ,intial-scale="1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css" >
+    </head>
+<body>
+    <div class="background">
+     <h1>Basic calculator</h1>
+     <div class="calculator">
+    <form>
+    <div class="dispaly">
+    <input type="text" name="show" placeholder='_'>
+    </div>
+    <div>
+    <input type="button" value="DEL" onclick="show.value = 'DEL'" class="operator">
+    <input type="button" value="<-" onclick="show.value = show.value.toString().slice(0,-1)" class="operator">
+    <input type="button" value="." onclick="show.value += '.'" class="operator">
+    <input type="button" value="/" onclick="show.value += '/'" class="operator">
+    </div>
+    <div>
+        <input type="button" value="7" onclick="show.value += '7'" >
+        <input type="button" value="8" onclick="show.value += '8'" >
+        <input type="button" value="9" onclick="show.value += '9'" >
+        <input type="button" value="*" onclick="show.value += '*'" class="operator">
+    </div>
+    <div>
+        <input type="button" value="4" onclick="show.value += '4'" >
+        <input type="button" value="5" onclick="show.value += '5'" >
+        <input type="button" value="6" onclick="show.value += '6'" >
+        <input type="button" value="-" onclick="show.value += '-'" class="operator">
+    </div>
+    <div>
+        <input type="button" value="1" onclick="show.value += '1'" >
+        <input type="button" value="2" onclick="show.value += '2'" >
+        <input type="button" value="3" onclick="show.value += '3'" >
+        <input type="button" value="+" onclick="show.value += '+'" class="operator">
+    </div>
+    <div>
+        <input type="button" value="00" onclick="show.value += '00'" >
+        <input type="button" value="0" onclick="show.value += '0'" >
+        <input type="button" value="=" onclick="show.value =eval(show.value)" class="operator2">
+       
+    </div>
+    </form>
+     </div>
+    </div>
+</body>
+</html>
